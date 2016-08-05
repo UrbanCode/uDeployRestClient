@@ -20,7 +20,7 @@ This plugin is protected under the [Apache Version 2.0 License](https://www.apac
 ### Compiling Source
 `gradle`
 
-The Gradle .jar file can be found in build/distributions once the project has been built, under the Releases tab, or as an artifact on Maven Repository. To add the uDeployRestClient project as a dependency in another Gradle project, add the following lines:
+The Gradle .jar file can be found in build/libs once the project has been built, under the Releases tab, or as an artifact on Maven Repository. To add the uDeployRestClient project as a dependency in another Gradle project, add the following lines:
 ```
 dependencies {
     compile 'com.ibm.urbancode.plugins:uDeployRestClient:1.0'
