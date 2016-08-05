@@ -36,6 +36,6 @@ To compile the project locally, four additional jar files are required: CommonsU
 Place these jars in uDeployRestClient project's 'lib' folder located in the root directory. These jars can be found within IBM UrbanCode Deploy's installation directory.
 
 ### Java Docs
-'gradle createDocs'
+`gradle createDocs`
 
 Generate new Java Docs with the above command. 
