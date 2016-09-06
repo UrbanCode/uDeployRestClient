@@ -7,16 +7,16 @@ This plugin is protected under the [Apache Version 2.0 License](https://www.apac
 ### Compatibility
 	The uDeployRestClient is used to interact with IBM UrbanCode Deploy v6.0 or later and
     implemented through a plugin or script. It provides wrapper functionality, through the
-    REST client, with various UCD objects such as: Applications, Components, and Processes. 
-    
+    REST client, with various UCD objects such as: Applications, Components, and Processes.
+
 ### Installation
-	Download the .jar file from our Releases tab or use retreive it as a Maven Repository dependency.
-    Once the download is configured, set the jar file on the classpath so you can access the classes within your code.
+	At this time, the uDeployRestClient.jar must be built locally. We are actively preparing the binaries to compile uDeployRestClient locally and distribute through Maven.
+    Follow the build instructions below and place the necessary 4 jars within the /lib directory to compile.
 
 ### History
     Version 1.0
         Community GitHub Release
- 
+
 ### Compiling Source
 `gradle`
 
@@ -38,4 +38,4 @@ Place these jars in uDeployRestClient project's 'lib' folder located in the root
 ### Java Docs
 `gradle createDocs`
 
-Generate new Java Docs with the above command. 
+Generate new Java Docs with the above command.
