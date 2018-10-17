@@ -1,41 +1,34 @@
-# IBM UrbanCode uDepoyRestClient Project
+# UrbanCode uDepoyRestClient Project
 ---
 
 ### License
-This plugin is protected under the [Apache Version 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.txt)
+This project is protected under the [Apache Version 2.0 License](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
 ### Compatibility
-	The uDeployRestClient is used to interact with IBM UrbanCode Deploy v6.0 or later and
-    implemented through a plugin or script. It provides wrapper functionality, through the
-    REST client, with various UCD objects such as: Applications, Components, and Processes.
+The uDeployRestClient is used to interact with UrbanCode Deploy v6.0 or later and generally implemented through a plug-in or script. It provides wrapper functionality, through the REST client, with various UCD objects such as: Applications, Components, and Processes.
 
-### Installation
-	At this time, the uDeployRestClient.jar must be built locally. We are actively preparing the binaries to compile uDeployRestClient locally and distribute through Maven.
-    Follow the build instructions below and place the necessary 4 jars within the /lib directory to compile.
+### Releases
+Our most recent releases can be found on the [UrbanCode's Public Maven Repository](https://public.dhe.ibm.com/software/products/UrbanCode/maven2/com/ibm/urbancode/commons/uDeployRestClient/).
 
-### History
-    Version 1.0
-        Community GitHub Release
+### Repository Standards
+This project is a clone of an internal repository with Gradle modifications. Pull requests and suggestions must be validated internally before they appear publicly. Please use the [Issues tab](https://github.com/IBM-UrbanCode/uDeployRestClient/issues) for general support.
 
-### Compiling Source
+### Compiling Open Source Project
 `gradle`
 
 The Gradle .jar file can be found in build/libs once the project has been built, under the Releases tab, or as an artifact on Maven Repository. To add the uDeployRestClient project as a dependency in another Gradle project, add the following lines:
 ```
+repositories {
+    maven {
+        url "https://public.dhe.ibm.com/software/products/UrbanCode/maven2/"
+    }
+}
 dependencies {
-    compile 'com.ibm.urbancode.plugins:uDeployRestClient:1.0'
+    compile 'com.ibm.urbancode.commons:uDeployRestClient:+'
 }
 ```
 
-To add the uDeployRestClient project as a dependency in another Ant Ivy project, add the following line:
-```
-<dependency org="com.ibm.urbancode.plugins" name="uDeployRestClient" rev="1.0"/>
-```
-
-To compile the project locally, four additional jar files are required: CommonsUtil.jar, commons-web.jar, HttpComponents-Util.jar , and udclient.jar.
-Place these jars in uDeployRestClient project's 'lib' folder located in the root directory. These jars can be found within IBM UrbanCode Deploy's installation directory.
-
-### Java Docs
+### Generating Java Docs
 `gradle createDocs`
 
 Generate new Java Docs with the above command.
