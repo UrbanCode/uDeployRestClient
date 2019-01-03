@@ -1,11 +1,10 @@
-/*
-* Licensed Materials - Property of IBM Corp.
-* IBM UrbanCode Deploy
-* (c) Copyright IBM Corporation 2011, 2016. All Rights Reserved.
-*
-* U.S. Government Users Restricted Rights - Use, duplication or disclosure restricted by
-* GSA ADP Schedule Contract with IBM Corp.
-*/
+/**
+ * (c) Copyright IBM Corporation 2011, 2017.
+ * (c) Copyright HCL Technologies Ltd. 2018. All Rights Reserved.
+ * This is licensed under the following license.
+ * The Apache Version 2.0 License (https://www.apache.org/licenses/LICENSE-2.0.txt)
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
 package com.urbancode.ud.client;
 
 import java.io.IOException;
